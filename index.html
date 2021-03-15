@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reportes Computadoras MINERD</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <style>
+      body{
+          background-image: url(../RegistroPCMINERD/img/alumnos_rep_digital.jpeg);
+          background-color: whitesmoke;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+          max-width: 100%;
+          max-height: 100vh;
+      }
+        .colores{
+           background-color: sandybrown;
+           margin-right: 15rem;
+        }
+        
+        img{
+            width: 500px;
+            margin-left: 4rem;
+            margin-top: 1rem;
+        }
+        .alinear{
+            margin-right: -15rem;
+            padding-bottom: 2rem;
+            color:
+        }
+        
+       
+       
+    </style>
+
+  </head>
+  <body>
+
+    <!--<nav class="navbar navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">Reporte de profesores que se le entregan la computadora del MINERD</a> 
+      </div>
+    </nav>-->
+    
+    <img src="img/Logo-Republica-Digital-01.png" alt="">
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card" style="background-color:cornflowerblue;">
+            <div class="card-body">
+              <form id="formRegistro">
+                <div class="form-group">
+                    <input type="text" id="Cedula" placeholder="Introduzca la cedula" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="Correo" placeholder="Introduzca el correo" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="Escuela" placeholder="Introduzca la escuela" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="Descripcion" placeholder="Introduzca la descripcion del computador" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="file" id="Foto" accept=".jpg, .jpeg, .png" class="form-control" title="SeleccionarArchivos">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+
+               
+                       
+
+
+            </form>
+                <button onclick="imprimirReporte();" class="btn btn-primary btn-block" style="margin-top: 1rem;">Imprimir</button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+     </body>
+</html>
+    
